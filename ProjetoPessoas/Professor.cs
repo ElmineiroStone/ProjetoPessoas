@@ -13,11 +13,16 @@ namespace ProjetoPessoas
 
         public void ReceberAumento(float aum)
         {
-            salario = (salario / aum) * salario;
+            salario += aum;
+            
         }
 
         public string Especialidade { get; set; }
-        public float Salario { get; set; }
+        public float Salario
+        {
+            get { return salario; }
+            set { salario = value;}
+        }
 
         public override string Detalhes()
         {

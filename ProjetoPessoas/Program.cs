@@ -30,6 +30,7 @@ Professor p1 = new()
     Especialidade = "Matemática",
     Salario = 2500.75f
 };
+p1.ReceberAumento(550.20f);
 
 Funcionario f1 = new()
 {
